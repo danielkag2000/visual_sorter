@@ -1,8 +1,8 @@
 from typing import List
-from algs.basic_sorter import BasicSorter
+from algs.basic_sort import BasicSort
 
 
-class BubbleSort(BasicSorter):
+class BubbleSort(BasicSort):
     def __init__(self, array: List[int]):
         super().__init__(array)
 

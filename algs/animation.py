@@ -1,11 +1,11 @@
-from algs.basic_sorter import BasicSorter
+from algs.basic_sort import BasicSort
 import matplotlib.pyplot as plt
 import matplotlib.colors as mp_colors
 from matplotlib import animation
 
 
 class AlgAnimation(object):
-    def __init__(self, alg: BasicSorter, speed: int = 50):
+    def __init__(self, alg: BasicSort, speed: int = 50):
         self.fig = plt.figure()
         self.steps = alg.calc_all_steps()
 

@@ -1,7 +1,7 @@
 from typing import List
 
 
-class BasicSorter(object):
+class BasicSort(object):
     def __init__(self, array: List[int]):
         self.array = array
         self._array_copy = array.copy()
@@ -14,9 +14,7 @@ class BasicSorter(object):
             yield step
 
     def sort(self) -> List[int]:
-        for _ in self.sort_generator():
-            pass
-        return self._array.copy()
+        return self.calc_all_steps()[-1]
 
     def reset(self):
-        self._array = self._array_copy.copy()
+        self.array = self._array_copy.copy()
